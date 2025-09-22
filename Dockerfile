@@ -98,6 +98,7 @@ USER elixir
 
 ENV USER=elixir
 
+RUN mkdir -p /app/priv/static
 COPY --chown=elixir:elixir --from=dev /public /public
 COPY --chown=elixir:elixir --from=dev /mix/_build/prod/rel/hello ./
 COPY --chown=elixir:elixir bin/docker-entrypoint-web bin/
