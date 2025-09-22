@@ -54,6 +54,7 @@ defmodule Hello.MixProject do
       {:phoenix_live_view, "1.1.8"},
       {:postgrex, "0.21.1"},
       {:swoosh, "1.19.5"},
+      {:req, "~> 0.4"},
       {:telemetry_metrics, "1.1.0"},
       {:telemetry_poller, "1.3.0"}
     ]
