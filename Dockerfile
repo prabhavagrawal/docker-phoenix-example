@@ -72,7 +72,7 @@ RUN if [ "${MIX_ENV}" != "dev" ]; then \
 
 ENTRYPOINT ["/app/bin/docker-entrypoint-web"]
 
-EXPOSE 8000
+EXPOSE 80
 
 CMD ["iex", "-S", "mix", "phx.server"]
 
@@ -105,6 +105,6 @@ COPY --chown=elixir:elixir bin/docker-entrypoint-web bin/
 
 ENTRYPOINT ["/app/bin/docker-entrypoint-web"]
 
-EXPOSE 8000
+EXPOSE 80
 
 CMD ["bin/hello", "start"]
